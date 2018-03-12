@@ -10,6 +10,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
 
+// http请求
+// var express = require('express')
+// var app = express()
+// var apiRoutes = express.Router()
+var axios = require('axios')
+// app.use('/api', apiRoutes)
+
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 
@@ -42,6 +49,16 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     quiet: true, // necessary for FriendlyErrorsPlugin
     watchOptions: {
       poll: config.dev.poll,
+    },
+    // http请求
+    before (app) {
+      app.get('/api/goodsData',(req,res)=>{
+        axios.get('http://jspang.com/DemoApi/typeGoods.php').then((response)=>{
+            res.json(response.data)
+        }).catch((error)=>{
+          console.log(error)
+        })
+      })
     }
   },
   plugins: [
