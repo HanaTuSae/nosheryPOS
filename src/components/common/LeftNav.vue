@@ -2,46 +2,28 @@
   <div class="left-Nav">
     <ul>
       <li>
-        <i class="iconfont icon-hanbao">
-        </i>
-        <div>
-          商品
-        </div>
+        <i class="iconfont icon-hanbao"></i>
+        <div>商品</div>
       </li>
       <li>
-        <i class="iconfont icon-dianpu">
-        </i>
-        <div>
-          店铺
-        </div>
+        <i class="iconfont icon-dianpu"></i>
+        <div>店铺</div>
       </li>
       <li>
-        <i class="iconfont icon-goumai">
-        </i>
-        <div>
-          收银
-        </div>
+        <i class="iconfont icon-goumai"></i>
+        <div>收银</div>
       </li>
       <li>
-        <i class="iconfont icon-huiyuanqia">
-        </i>
-        <div>
-          会员
-        </div>
+        <i class="iconfont icon-huiyuanqia"></i>
+        <div>会员</div>
       </li>
       <li>
-        <i class="iconfont icon-zuanshi">
-        </i>
-        <div>
-          统计
-        </div>
+        <i class="iconfont icon-zuanshi"></i>
+        <div>统计</div>
       </li>
       <li>
-        <i class="iconfont icon-gongnengjianyi">
-        </i>
-        <div>
-          设置
-        </div>
+        <i class="iconfont icon-gongnengjianyi"></i>
+        <div>设置</div>
       </li>
     </ul>
   </div>
