@@ -17,7 +17,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 #app {
   font-family: 'Microsoft YaHei', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -29,7 +29,7 @@ export default {
 }
 .main{
   width:95%;
-  floate:left;
+  float:left;
   background-color: #EFF2F7;
   height:100%;
   overflow: auto;
