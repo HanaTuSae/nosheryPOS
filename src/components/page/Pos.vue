@@ -23,7 +23,8 @@
           </el-tab-pane>
           <el-tab-pane label="挂单" name="guadan">
             <el-table :data="guadanID"
-                      border style="width:100%"
+                      border
+                      style="width:100%"
                       max-height="500"
                       highlight-current-row
                       @row-click="handleRowClick">
@@ -273,12 +274,6 @@ export default {
             },
             guadanList: this.tableData
           }
-          // if (localStorage.guadanData !== '[]' && localStorage.guadanData) {
-          //   this.guadanData.push(guadanData)
-          // } else {
-          //   this.guadanData.push(guadanData)
-          //   localStorage.guadanData = JSON.stringify(this.guadanData)
-          // }
           this.guadanData.push(guadanData)
           if (!localStorage.guadanData) {
             localStorage.guadanData = JSON.stringify(this.guadanData)
